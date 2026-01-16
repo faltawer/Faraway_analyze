@@ -5,7 +5,8 @@ from PIL import Image, ImageDraw, ImageFont
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import multiprocessing
 
-card_path = r"R:\FLo\GitHub\Faraway-Project\Documentation\Cards"
+file_path = os.path.abspath(__file__)
+card_path = os.path.join(os.path.dirname(file_path), "Documentation", "Cards")
 
 
 class Card:

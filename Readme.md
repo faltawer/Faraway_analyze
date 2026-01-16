@@ -7,3 +7,22 @@ Work In Progress. /!\
 ![top_1.jpg](Documentation%2FOutput%2Ftop_1.jpg)
 
 **Happy Gaming and Analyzing!**  
+
+## Requirements
+
+- [Teserract OCR](https://github.com/tesseract-ocr/tesseract)
+Make sure that teserract executable is in your `PATH` variable.
+
+## Installation
+
+Run following command to install dependencies:
+```batch
+uv sync
+```
+
+## Usage
+
+Run following command to start the application:
+```batch
+uv run main.py
+```
