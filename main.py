@@ -287,7 +287,7 @@ class Game:
 
     def end_game(self, visual=False):
         """Handles scoring and display at the end of the game."""
-        print("\n=== 🏁 Game Over! Scoring ===")
+        print("\n=== 🏁 Fin du match ! Score ===")
         scores = []
 
         for player in self.players:
@@ -306,9 +306,9 @@ class Game:
         winners = [name for name, score in scores if score == max_score]
 
         if len(winners) == 1:
-            print(f"\n🏆 Winner: {winners[0]} with {max_score} points!")
+            print(f"\n🏆 Gagnante: {winners[0]} avec {max_score} points!")
         else:
-            print(f"\n🤝 It's a tie between: {', '.join(winners)} with {max_score} points each!")
+            print(f"\n🤝 C'est une égalité entre : {', '.join(winners)} avec {max_score} points chacun !")
 
     def load_cards(self):
         """Loads cards from Excel file and separates them by type."""
@@ -475,7 +475,7 @@ def run_manual_mode(card_file, played_card_ids, sanctuary_card_ids):
 
 # === Run the Game ===
 if __name__ == "__main__":
-    player_names = ["Alice", "Bob", "Charlie", "Dana"]
+    player_names = ["Antoine", "Benoît", "Camille", "Delphine"]
     card_file = "./Documentation/faraway_data.xlsx"
     # run_manual_mode(card_file, played_card_ids=[5, 12, 7, 13, 28, 43, 38, 23], sanctuary_card_ids=[70, 75, 79, 85])
     results = run_simulations_parallel(10, player_names, card_file)
